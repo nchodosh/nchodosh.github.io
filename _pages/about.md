@@ -19,4 +19,4 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-I am a Ph.D. student in the Robotics institute working under the supervision of Simon Lucey and Deva Ramanan. My research is focused on motion and geometry estimation from LiDAR sensors used in autonomous driving.
+I am a Ph.D. student in the Carnegie Mellon University Robotics Institute working under the supervision of Simon Lucey and Deva Ramanan. My research is focused on motion and geometry estimation from LiDAR sensors used in autonomous driving.
