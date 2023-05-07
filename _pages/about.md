@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Ph.D. Student in the <a href='https://www.ri.cmu.edu/'>Robotics Institute</a>.
+subtitle: Ph.D. Candidate in the <a href='https://www.ri.cmu.edu/'>Robotics Institute</a>.
 
 profile:
   align: right
@@ -19,4 +19,4 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-I am a Ph.D. student in the Carnegie Mellon University Robotics Institute working under the supervision of Simon Lucey and Deva Ramanan. My research is focused on motion and geometry estimation from LiDAR sensors used in autonomous driving. I anticipate graduating in spring 2024 and will be on the academic job market fall 2023 looking for tenure track positions and post-docs.
+I am a Ph.D. candidate in the Carnegie Mellon University Robotics Institute working under the supervision of Simon Lucey and Deva Ramanan. My research is focused on motion and geometry estimation from LiDAR sensors used in autonomous driving. I anticipate graduating in spring 2024 and will be on the academic job market fall 2023 looking for tenure track positions and post-docs.
