@@ -2,16 +2,16 @@
 layout: about
 title: about
 permalink: /
-subtitle: Ph.D. Candidate in the <a href='https://www.ri.cmu.edu/'>Robotics Institute</a>.
+subtitle: Assitant Professor at <a href='https://www1.villanova.edu/university.html'>Villanova University</a>.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: headshot.jpg
   image_circular: false # crops the image to make it circular
   address: >
-    <p>212 Elliott Dunlap Smith Hall</p>
-    <p>4802 Forbes Avenue</p>
-    <p>Pittsburgh, PA 15213</p>
+    <p>292d Mendel Hall</p>
+    <p>800 Lancaster Ave</p>
+    <p>Villanova, PA 19085</p>
 
 news: false  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
@@ -19,4 +19,4 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-I am a Ph.D. candidate in the Carnegie Mellon University Robotics Institute working under the supervision of Simon Lucey and Deva Ramanan. My research is focused on motion and geometry estimation from LiDAR sensors used in autonomous driving. I anticipate graduating in spring 2024 and will be on the academic job market fall 2023 looking for tenure track positions and post-docs.
+I am an Assitant Professor at Villanova University in the Computing Sciences department where I teach and reasearch computer vision. My interested in computer vision began while completing my undergraduate studies at the University of Pennslyvania. There, I worked in the lab's of Vijay Kumar and Jianbo Shi on automatic methods for detecting and tracking microrobots for the purpose of optical control. I then began my Ph.D. in the Robotics instute at Carnegie Mellon working first under Simon Lucey and then Deva Ramanan. During my Ph.D. I became interested analysis by synthesis; the machine learning approach where inferences are made by comparing hypothetical world-states produced by a world-model to actual measurements. This idea became the foudnation of my thesis in which I applied it to my main practical area of interest: autonomous driving and more specifically LiDAR-based sensing. My interest in LiDAR came from my work for Argo AI (now Latitude AI) a Pittsburgh-based autonomous driving company. I have published on various aspects of LiDAR-based sensing including depth completion, scene flow, and scene reconstruction.
