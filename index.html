@@ -110,7 +110,7 @@
           <h1 class="post-title">
            Nathaniel E. Chodosh
           </h1>
-          <p class="desc">Ph.D. Candidate in the <a href="https://www.ri.cmu.edu/" rel="external nofollow noopener" target="_blank">Robotics Institute</a>.</p>
+          <p class="desc">Assitant Professor at <a href="https://www1.villanova.edu/university.html" rel="external nofollow noopener" target="_blank">Villanova University</a>.</p>
         </header>
 
         <article>
@@ -120,26 +120,26 @@
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/prof_pic-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/prof_pic-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/prof_pic-1400.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/headshot-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/headshot-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/headshot-1400.webp"></source>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/prof_pic.jpg" class="img-fluid z-depth-1 rounded" width="auto" height="auto" alt="prof_pic.jpg" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/headshot.jpg" class="img-fluid z-depth-1 rounded" width="auto" height="auto" alt="headshot.jpg" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
 </figure>
 
             <div class="address">
-              <p>212 Elliott Dunlap Smith Hall</p> <p>4802 Forbes Avenue</p> <p>Pittsburgh, PA 15213</p>
+              <p>292d Mendel Hall</p> <p>800 Lancaster Ave</p> <p>Villanova, PA 19085</p>
 
             </div>
           </div>
 
           <div class="clearfix">
-            <p>I am a Ph.D. candidate in the Carnegie Mellon University Robotics Institute working under the supervision of Simon Lucey and Deva Ramanan. My research is focused on motion and geometry estimation from LiDAR sensors used in autonomous driving. I anticipate graduating in spring 2024 and will be on the academic job market fall 2023 looking for tenure track positions and post-docs.</p>
+            <p>I am an Assitant Professor at Villanova University in the Computing Sciences department where I teach and reasearch computer vision. My interested in computer vision began while completing my undergraduate studies at the University of Pennslyvania. There, I worked in the lab’s of Vijay Kumar and Jianbo Shi on automatic methods for detecting and tracking microrobots for the purpose of optical control. I then began my Ph.D. in the Robotics instute at Carnegie Mellon working first under Simon Lucey and then Deva Ramanan. During my Ph.D. I became interested analysis by synthesis; the machine learning approach where inferences are made by comparing hypothetical world-states produced by a world-model to actual measurements. This idea became the foudnation of my thesis in which I applied it to my main practical area of interest: autonomous driving and more specifically LiDAR-based sensing. My interest in LiDAR came from my work for Argo AI (now Latitude AI) a Pittsburgh-based autonomous driving company. I have published on various aspects of LiDAR-based sensing including depth completion, scene flow, and scene reconstruction.</p>
 
           </div>
 
@@ -159,20 +159,33 @@
         <div class="col-sm-2 abbr"></div>
 
         <!-- Entry bib key -->
-        <div id="chodosh2019deep" class="col-sm-8">
+        <div id="chodosh2025smore" class="col-sm-8">
         <!-- Title -->
-        <div class="title">Deep convolutional compressed sensing for lidar depth completion</div>
+        <div class="title">Simultaneous Map and Object Reconstruction</div>
         <!-- Author -->
         <div class="author">
         
 
-        Nathaniel Chodosh, Chaoyang Wang, and Simon Lucey</div>
+        Nathaniel Chodosh, Anish Madan, Simon Lucey, and
+          <span class="more-authors" title="click to view 1 more author" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '1 more author' ? 'Deva Ramanan' : '1 more author';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">1 more author</span>
+</div>
 
         <!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          <em>In Computer Vision–ACCV 2018: 14th Asian Conference on Computer Vision, Perth, Australia, December 2–6, 2018, Revised Selected Papers, Part I 14</em>, 2019
+          <em>In </em>, 2025
         </div>
         <div class="periodical">
           
@@ -197,33 +210,96 @@
         <div class="col-sm-2 abbr"></div>
 
         <!-- Entry bib key -->
-        <div id="steager2015optically" class="col-sm-8">
+        <div id="chodosh2023re" class="col-sm-8">
         <!-- Title -->
-        <div class="title">Optically addressing microscopic bioactuators for real-time control</div>
+        <div class="title">(Best Paper Finalist) Re-Evaluating LiDAR Scene Flow for Autonomous Driving</div>
         <!-- Author -->
         <div class="author">
         
 
-        Edward B Steager, Denise Wong, Nathaniel Chodosh, and
-          <span class="more-authors" title="click to view 1 more author" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '1 more author' ? 'Vijay Kumar' : '1 more author';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">1 more author</span>
-</div>
+        Nathaniel Chodosh, Deva Ramanan, and Simon Lucey</div>
 
         <!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          <em>In 2015 IEEE International Conference on Robotics and Automation (ICRA)</em>, 2015
+          <em>In </em>, 2024
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"></div>
+
+        <!-- Entry bib key -->
+        <div id="chodosh2020use" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">When to use convolutional neural networks for inverse problems</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Nathaniel Chodosh, and Simon Lucey</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition</em>, 2020
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"></div>
+
+        <!-- Entry bib key -->
+        <div id="chodosh2019deep" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Deep convolutional compressed sensing for lidar depth completion</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Nathaniel Chodosh, Chaoyang Wang, and Simon Lucey</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In Computer Vision–ACCV 2018: 14th Asian Conference on Computer Vision, Perth, Australia, December 2–6, 2018, Revised Selected Papers, Part I 14</em>, 2019
         </div>
         <div class="periodical">
           
@@ -299,58 +375,33 @@
         <div class="col-sm-2 abbr"></div>
 
         <!-- Entry bib key -->
-        <div id="chodosh2020use" class="col-sm-8">
+        <div id="steager2015optically" class="col-sm-8">
         <!-- Title -->
-        <div class="title">When to use convolutional neural networks for inverse problems</div>
+        <div class="title">Optically addressing microscopic bioactuators for real-time control</div>
         <!-- Author -->
         <div class="author">
         
 
-        Nathaniel Chodosh, and Simon Lucey</div>
+        Edward B Steager, Denise Wong, Nathaniel Chodosh, and
+          <span class="more-authors" title="click to view 1 more author" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '1 more author' ? 'Vijay Kumar' : '1 more author';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">1 more author</span>
+</div>
 
         <!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          <em>In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition</em>, 2020
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
-
-          
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"></div>
-
-        <!-- Entry bib key -->
-        <div id="chodosh2023re" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Re-Evaluating LiDAR Scene Flow for Autonomous Driving</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Nathaniel Chodosh, Deva Ramanan, and Simon Lucey</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>arXiv preprint arXiv:2304.02150</em>, 2023
+          <em>In 2015 IEEE International Conference on Robotics and Automation (ICRA)</em>, 2015
         </div>
         <div class="periodical">
           
