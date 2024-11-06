@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Assitant Professor of CS at <a href='https://www1.villanova.edu/university.html'>Villanova University</a>.
+subtitle: Assistant Professor of CS at <a href='https://www1.villanova.edu/university.html'>Villanova University</a>.
 
 profile:
   align: right
