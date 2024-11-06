@@ -195,10 +195,9 @@ blockquote {
 .profile .address {
   margin-bottom: 5px;
   margin-top: 5px;
-}
-.profile .address p {
-  display: inline-block;
-  margin: 0;
+  text-align: center p;
+  text-align-display: inline-block;
+  text-align-margin: 0;
 }
 
 .profile.float-right {
