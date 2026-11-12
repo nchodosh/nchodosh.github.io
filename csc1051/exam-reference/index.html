@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Exam Reference</title>
+<style>
+:root { --bg:#fff; --fg:#1a1a1a; --muted:#555; --rule:#d0d0d0; --codebg:#f3f3f3; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg:#16181c; --fg:#e8e8e8; --muted:#a8a8a8; --rule:#3a3d44; --codebg:#23262c; }
+}
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--fg);
+  font:16px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+main { max-width:1100px; margin:0 auto; padding:16px; }
+h1 { text-align:center; font-size:1.6rem; margin:.4em 0 .8em; }
+h2 { font-size:1.2rem; margin:1.2em 0 .3em; border-bottom:2px solid var(--rule); padding-bottom:.15em; }
+h3 { font-size:1rem; margin:.9em 0 .25em; }
+p { margin:.3em 0 .5em; }
+.cols { column-count:2; column-gap:2.5rem; }
+section { break-inside:auto; }
+.sub { break-inside:avoid; }
+.prec td:first-child { width:58%; white-space:nowrap; }
+h2, h3 { break-after:avoid; }
+table { width:100%; border-collapse:collapse; margin:.2em 0 .6em; }
+tr { break-inside:avoid; }
+td { vertical-align:top; padding:.22em .4em .22em 0; font-size:.92rem; }
+td:first-child { width:38%; padding-right:.7em; }
+tr + tr td { border-top:1px solid var(--rule); }
+.prec tr.top td { border-top:2px solid var(--rule); }
+.prec tr:first-child td { border-top:none; }
+code, pre { font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:.88rem; }
+code { background:var(--codebg); padding:.05em .25em; border-radius:3px; }
+pre { margin:0; white-space:pre; }
+pre.block { background:var(--codebg); padding:.5em .7em; border-radius:4px; margin:.3em 0 .5em; }
+td pre { background:var(--codebg); padding:.15em .3em; border-radius:3px; display:inline-block; }
+@media (max-width:760px) { .cols { column-count:1; } }
+@media print { main { max-width:none; padding:0; } body { font-size:10.5pt; } }
+</style>
+</head>
+<body>
+<main>
+<h1>Exam Reference</h1>
+<div class="cols">
+<section>
+<h2>Operator precedence</h2>
+<p>Highest first. Operators on the same line are applied left to right.</p>
+<table class="prec">
+<tr class="top"><td><code>( )</code></td><td>grouping</td></tr>
+<tr class="top"><td><code>x[i]  x[a:b]  x.method()</code></td><td>indexing, slicing, method call</td></tr>
+<tr class="top"><td><code>**</code></td><td>exponent</td></tr>
+<tr><td><code>-x</code></td><td>negation</td></tr>
+<tr><td><code>*  /  //  %</code></td><td>multiply, divide, floor-divide, remainder</td></tr>
+<tr><td><code>+  -</code></td><td>add, subtract</td></tr>
+<tr class="top"><td><code>==  !=  &lt;  &lt;=  &gt;  &gt;=  in  not in</code></td><td>comparisons</td></tr>
+<tr class="top"><td><code>not</code></td><td>boolean not</td></tr>
+<tr><td><code>and</code></td><td>boolean and</td></tr>
+<tr><td><code>or</code></td><td>boolean or</td></tr>
+</table>
+</section>
+<section>
+<h2>Strings</h2>
+<div class="sub">
+<h3>Operators</h3>
+<table>
+<tr><td><code>s + t</code></td><td>a new string: <code>s</code> followed by <code>t</code></td></tr>
+<tr><td><code>s * n</code></td><td>a new string: <code>s</code> repeated <code>n</code> times</td></tr>
+<tr><td><code>s == t</code></td><td>whether the two strings are identical</td></tr>
+<tr><td><code>s &lt; t</code></td><td>whether <code>s</code> comes before <code>t</code> alphabetically, comparing one character at a time</td></tr>
+<tr><td><code>t in s</code></td><td>whether <code>t</code> appears inside <code>s</code> as consecutive characters</td></tr>
+<tr><td><code>len(s)</code></td><td>the number of characters</td></tr>
+<tr><td><code>s[i]</code></td><td>the character at index <code>i</code> (negative counts from the end)</td></tr>
+<tr><td><code>s[a:b]</code></td><td>a new string of the characters from index <code>a</code> up to, but not including, <code>b</code></td></tr>
+</table>
+</div>
+<div class="sub">
+<h3>Methods</h3>
+<p>None of these change <code>s</code>; each returns a new value.</p>
+<table>
+<tr><td><code>s.upper()</code></td><td>a copy with all letters uppercase</td></tr>
+<tr><td><code>s.lower()</code></td><td>a copy with all letters lowercase</td></tr>
+<tr><td><code>s.strip()</code></td><td>a copy with whitespace removed from both ends</td></tr>
+<tr><td><code>s.count(t)</code></td><td>how many times <code>t</code> appears in <code>s</code></td></tr>
+<tr><td><code>s.isupper()</code></td><td>whether every letter in <code>s</code> is uppercase</td></tr>
+<tr><td><code>s.islower()</code></td><td>whether every letter in <code>s</code> is lowercase</td></tr>
+<tr><td><code>s.isalpha()</code></td><td>whether <code>s</code> is non-empty and all letters</td></tr>
+<tr><td><code>s.isdigit()</code></td><td>whether <code>s</code> is non-empty and all digits</td></tr>
+<tr><td><code>s.isalnum()</code></td><td>whether <code>s</code> is non-empty and all letters or digits</td></tr>
+<tr><td><code>s.isspace()</code></td><td>whether <code>s</code> is non-empty and all whitespace</td></tr>
+</table>
+</div>
+</section>
+<section>
+<h2>Conversions</h2>
+<div class="sub">
+<table>
+<tr><td><code>int(x)</code></td><td><code>x</code> as an integer</td></tr>
+<tr><td><code>float(x)</code></td><td><code>x</code> as a decimal number</td></tr>
+<tr><td><code>str(x)</code></td><td><code>x</code> as a string</td></tr>
+<tr><td><code>input(prompt)</code></td><td>the text the user typed, as a string</td></tr>
+</table>
+</div>
+</section>
+<section>
+<h2>Lists</h2>
+<div class="sub">
+<h3>Operators</h3>
+<table>
+<tr><td><code>L + M</code></td><td>a new list: the elements of <code>L</code> followed by those of <code>M</code></td></tr>
+<tr><td><code>L * n</code></td><td>a new list: <code>L</code> repeated <code>n</code> times</td></tr>
+<tr><td><code>L == M</code></td><td>whether the two lists have the same elements in the same order</td></tr>
+<tr><td><code>x in L</code></td><td>whether <code>x</code> is one of the elements</td></tr>
+<tr><td><code>len(L)</code></td><td>the number of elements</td></tr>
+<tr><td><code>L[i]</code></td><td>the element at index <code>i</code> (negative counts from the end)</td></tr>
+<tr><td><code>L[a:b]</code></td><td>a new list of the elements from index <code>a</code> up to, but not including, <code>b</code></td></tr>
+<tr><td><code>L[i] = x</code></td><td>replaces the element at index <code>i</code></td></tr>
+</table>
+</div>
+<div class="sub">
+<h3>Methods</h3>
+<p>These change <code>L</code> itself.</p>
+<table>
+<tr><td><code>L.append(x)</code></td><td>adds <code>x</code> at the end; returns None</td></tr>
+<tr><td><code>L.insert(i, x)</code></td><td>puts <code>x</code> at index <code>i</code>, shifting the rest right; returns None</td></tr>
+<tr><td><code>L.remove(x)</code></td><td>deletes the first element equal to <code>x</code>; returns None</td></tr>
+<tr><td><code>L.pop()</code></td><td>deletes the last element and returns it</td></tr>
+<tr><td><code>L.pop(i)</code></td><td>deletes the element at index <code>i</code> and returns it</td></tr>
+<tr><td><code>L.index(x)</code></td><td>the index of the first element equal to <code>x</code></td></tr>
+<tr><td><code>L.count(x)</code></td><td>how many elements equal <code>x</code></td></tr>
+<tr><td><code>L.sort()</code></td><td>puts the elements in increasing order; returns None</td></tr>
+<tr><td><code>L.reverse()</code></td><td>reverses the order; returns None</td></tr>
+</table>
+</div>
+</section>
+<section>
+<h2>Dictionaries</h2>
+<div class="sub">
+<h3>Operators</h3>
+<table>
+<tr><td><code>{k1: v1, k2: v2}</code></td><td>a new dictionary; <code>{}</code> is empty</td></tr>
+<tr><td><code>D[k]</code></td><td>the value for <code>k</code> (error if not a key)</td></tr>
+<tr><td><code>D[k] = v</code></td><td>sets the value for <code>k</code>, adding <code>k</code> if it is new</td></tr>
+<tr><td><code>k in D</code></td><td>whether <code>k</code> is one of the keys</td></tr>
+<tr><td><code>len(D)</code></td><td>the number of key-value pairs</td></tr>
+<tr><td><code>for k in D:</code></td><td>loops over the keys</td></tr>
+</table>
+</div>
+<div class="sub">
+<h3>Methods</h3>
+<table>
+<tr><td><code>D.get(k)</code></td><td>the value for <code>k</code>, or None if <code>k</code> is not a key</td></tr>
+<tr><td><code>D.get(k, d)</code></td><td>the value for <code>k</code>, or <code>d</code> if <code>k</code> is not a key</td></tr>
+<tr><td><code>D.pop(k)</code></td><td>deletes <code>k</code> and returns its value</td></tr>
+<tr><td><code>D.keys()</code></td><td>all the keys</td></tr>
+<tr><td><code>D.values()</code></td><td>all the values</td></tr>
+<tr><td><code>D.items()</code></td><td>all the <code>(key, value)</code> pairs</td></tr>
+</table>
+</div>
+</section>
+<section>
+<h2>Functions</h2>
+<div class="sub"><h3>Defining and returning</h3>
+<table>
+<tr><td><pre>def f(p1, p2):
+    statement block</pre></td><td>defines <code>f</code> with <em>parameters</em> <code>p1</code>, <code>p2</code>; the indented statement block is the body of the function: one or more indented statements, run when <code>f</code> is called</td></tr>
+<tr><td><code>return x</code></td><td>immediately stop executing the function; the original function call evaluates to <code>x</code></td></tr>
+</table>
+<p>No <code>return</code> executed means the value is <code>None</code>.</p></div>
+
+<div class="sub"><h3>Calling a function</h3>
+<table>
+<tr><td><code>f(x, y)</code></td><td>arguments match parameters in order</td></tr>
+<tr><td><code>f(b=y, a=x)</code></td><td>arguments match parameters by name, in any order</td></tr>
+<tr><td><code>f(x, b=y)</code></td><td>positional arguments come before named ones</td></tr>
+<tr><td><code>r = f(x, y)</code></td><td>stores the call's value in <code>r</code></td></tr>
+</table></div>
+
+<div class="sub"><h3>Default arguments</h3>
+<pre class="block">def power(base, exp=2):
+    return base ** exp</pre>
+<table>
+<tr><td><code>power(3)</code></td><td>uses <code>exp = 2</code>: 9</td></tr>
+<tr><td><code>power(3, 3)</code></td><td>replaces the default exp: 27</td></tr>
+</table>
+<p>Parameters with defaults must come after those without: <code>def f(a, b=5)</code> is legal, <code>def f(a=5, b)</code> is an error.</p></div>
+</section>
+</div>
+</main>
+</body>
+</html>
